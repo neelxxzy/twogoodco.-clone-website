@@ -1,0 +1,405 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 1005px;
+}
+
+body {
+    background-color: #F7F7F7;
+
+}
+
+*::selection {
+    background-color: black;
+    color: white;
+}
+
+nav {
+    z-index: 150;
+    width: 100%;
+    padding: 20px;
+    padding-top: 2.5vw;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+}
+
+#nav-right {
+    display: flex;
+    gap: 4vw;
+}
+
+#nav-links {
+    display: flex;
+    gap: 4vw;
+}
+
+#nav-links a {
+    color: #000;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8vw;
+}
+
+#nav-links a:hover {
+    color: #31313182;
+    transition: all ease-in 0.2s;
+}
+
+#cursor {
+    width: 150px;
+    height: 150px;
+    background-color: #e3e3e390;
+    border-radius: 50%;
+    position: fixed;
+    transform: translate(-50%, -50%) scale(0);
+}
+
+#page1 {
+    min-height: 100vh;
+    width: 100%;
+    padding: 0px 20px;
+    padding-top: 15vw;
+}
+
+#page1 h1 {
+    font-family: futura;
+    line-height: 14vw;
+    text-transform: uppercase;
+    font-size: 15vw;
+}
+
+#video-container {
+    height: 100vh;
+    width: 100%;
+    margin-top: 1vw;
+    position: relative;
+}
+
+#video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#play {
+    background-color: #000;
+    color: white;
+    font-size: 2vw;
+    font-family: futura;
+    padding: 4vw 3vw;
+    border-radius: 50%;
+    position: fixed;
+    opacity: 0;
+    scale: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+#page2 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#page2-title {
+    display: flex;
+    justify-content: space-between;
+    margin: 70px 20px 0px 20px;
+    border-bottom: 1px solid #000;
+    overflow: hidden;
+}
+
+#page2-title p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+#page2 .elem {
+    width: 32%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.elem img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.elem .details {
+    width: 60%;
+    height: 6%;
+    background-color: #FFF5DD;
+    position: absolute;
+    z-index: 10;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.details p {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.details i {
+    font-size: 12px;
+}
+
+.details #item {
+    font-weight: 600;
+}
+
+#detail2 {
+    background-color: #F7F7F7;
+}
+
+#page3 {
+    height: 50vh;
+    width: 100%;
+    background-color: #F7F7F7;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px;
+}
+
+#page3 h2 {
+    font-family: futura;
+    text-transform: uppercase;
+    font-size: 3.5vw;
+    line-height: 4.5vw;
+    width: 50%;
+}
+
+#paragraph-detail {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+#paragraph-detail p {
+    width: 80%;
+    font-size: 18px;
+    line-height: 1.8vw;
+}
+
+#paragraph-detail a {
+    color: black;
+    text-decoration: none;
+    padding-bottom: 5px;
+    font-weight: 200;
+}
+
+#page4 {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    position: relative;
+    gap: 0.5vw;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+#page4 .items {
+    width: 49%;
+    height: 50vw;
+}
+
+.items img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right;
+}
+
+#page5-title {
+    display: flex;
+    justify-content: space-between;
+    margin: 70px 20px 0px 20px;
+    border-bottom: 1px solid #000;
+    overflow: hidden;
+}
+
+#page5-title p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+#page5 {
+    height: 80vh;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+}
+
+#page5 h1 {
+    font-size: 4vw;
+    text-transform: uppercase;
+    font-family: futura;
+    text-align: center;
+    padding: 30px;
+    line-height: 4.5vw;
+}
+
+#page5 a {
+    text-decoration: none;
+    color: white;
+    background-color: #000;
+    padding: 16px 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    border-radius: 40px;
+}
+
+#page5 p {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 20%;
+    text-align: center;
+}
+
+#page5 .swiper {
+    width: 100%;
+    height: 30%;
+    position: relative;
+}
+
+.next-icon {
+    z-index: 50;
+    position: absolute;
+    font-size: 30px;
+    top: 20%;
+    right: 0%;
+    cursor: pointer;
+}
+
+.prev-icon {
+    z-index: 50;
+    position: absolute;
+    font-size: 30px;
+    top: 20%;
+    left: 0%;
+    cursor: pointer;
+}
+
+#page6 {
+    width: 100%;
+    height: 100vh;
+    padding: 150px 20px 0px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#image-container {
+    display: flex;
+    gap: 20px;
+}
+
+#paragraph-detail a {
+    font-size: 14px;
+}
+
+#page7 {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+#page7 .connect {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 33.3vw;
+}
+
+.connect h3 {
+    font-size: 16px;
+    color: #33333394;
+    font-weight: 400;
+}
+
+.connect a {
+    color: black;
+    text-decoration: none;
+}
+
+.thenittygritties {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    gap: 10px;
+    width: 33.3vw;
+}
+
+.thenittygritties h3 {
+    font-size: 16px;
+    color: #33333394;
+    font-weight: 400;
+}
+
+.thenittygritties a {
+    color: black;
+    text-decoration: none;
+}
+
+.bottom-title {
+    width: 33.3vw;
+    text-align: center;
+}
+
+.bottom-title h1 {
+    line-height: 6vw;
+    font-family: futura;
+    font-size: 6vw;
+}
+
+#page8 {
+    padding: 0px 10vw 5vw 10vw;
+    font-size: 18px;
+    text-align: center;
+    line-height: 2vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.links a {
+    color: #33333372;
+    text-decoration: none;
+    margin: 20px;
+}
+
+#page8 p {
+    margin-top: 50px;
+}
